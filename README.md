@@ -16,8 +16,18 @@ RDP
 
 Mount HDD, automount
 
-BT
 
+Download
+BT
+deluge
+
+cloud 
+jDownloader
+regsiter 
+ run jdownloader in pi ( rdp, x-server, vnc,...)
+ login jdownloader id.
+ cleick download
+ 
 cloud space 
 Google Drive
 pCloud
