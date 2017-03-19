@@ -100,3 +100,10 @@ xdrp cannot run
     8. User Interface
     Language Chinese (Taiwan)
     rar 
+Rar    
+Raspberry Pi 樹莓派 強化版的解rar工具 unrar-nonfree
+http://blog.alenshiun.tw/2014/05/raspberry-pi-rar-unrar-nonfree.html
+
+
+    
+    
