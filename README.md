@@ -1,4 +1,4 @@
-# pi3
+## pi3
 
 web 化
 ssh
@@ -17,15 +17,26 @@ RDP
 Mount HDD, automount
 
 
-Download
-BT
-deluge
+Software
+VNC
+
+
+
+### Download
+- [ ] BT
+#deluge
 
 cloud 
+
 jDownloader
+
+
 regsiter 
+
  run jdownloader in pi ( rdp, x-server, vnc,...)
+ 
  login jdownloader id.
+ 
  cleick download
  
 cloud space 
