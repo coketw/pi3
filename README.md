@@ -116,5 +116,38 @@ Raspberry Pi 樹莓派 強化版的解rar工具 unrar-nonfree
 http://blog.alenshiun.tw/2014/05/raspberry-pi-rar-unrar-nonfree.html
 
 
+
+
+
+
+
+
+
     
-    
+    sudo mysql -uroot -p
+
+Port 5901 for tightvncserver
+Port 5900 for RealVNC Server
+Port 3389 for Remote Desktop Server xrdp
+An easy way to determine which tcp listeners are running on
+
+sudo netstat -apn | grep -w tcp | grep LISTEN
+
+sudo dpkg-reconfigure tzdata
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo date --set="30 December 2013 10:00:00"
+
+https://mattwilcox.net/web-development/setting-up-a-secure-home-web-server-with-raspberry-pi
+https://www.raspberrypi.org/forums/viewtopic.php?t=23474&p=220047
+
+http://blog.itist.tw/2016/05/use-wetty-to-connect-ssh-server-via-browser-with-raspbian-on-raspberry-pi.html
+cd wetty
+node app.js -p 8008
+
+
+http://192.168.1.113:8008/
+
+
+
