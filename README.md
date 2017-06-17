@@ -5,9 +5,9 @@ ssh
 bt
 DNLA?
 
-同步 sync 
-自動
-語系, 地區, 時區, NTP
+- 同步 sync 
+- 自動
+ -語系, 地區, 時區, NTP
 
 locale 
 HDMI
@@ -24,36 +24,28 @@ VNC
 
 ### Download
 - [ ] BT
-#deluge
+#####deluge
 
 cloud 
 
-jDownloader
+#####jDownloader
 
 
-regsiter 
-
+- regsiter 
  run jdownloader in pi ( rdp, x-server, vnc,...)
+  login jdownloader id.
+  cleick download
  
- login jdownloader id.
- 
- cleick download
- 
-cloud space 
-Google Drive
-pCloud
-mega
-dropbox 
-onedrive
+####cloud space 
+- Google Drive
+- pCloud
+- mega
+- dropbox 
+- onedrive
 
-個人雲端儲存系統 
-Owncloud
-
-Tonido
-
-
-
-
+#### 個人雲端儲存系統 
+- Owncloud
+- Tonido
 
 Linux
 ctop
@@ -119,12 +111,10 @@ http://blog.alenshiun.tw/2014/05/raspberry-pi-rar-unrar-nonfree.html
 
 
 
+sudo mysql -uroot -p
 
 
 
-
-    
-    sudo mysql -uroot -p
 
 Port 5901 for tightvncserver
 Port 5900 for RealVNC Server
