@@ -1,0 +1,75 @@
+
+系统启动盘
+
+系统下载： 这里选择 RASPBIAN JESSIE
+
+https://www.raspberrypi.org/downloads/raspbian/
+
+Noobs：系统安装助手
+
+https://www.raspberrypi.org/downloads/noobs/
+
+sources.list
+/etc/apt/sources.list
+
+ssh
+默认用户名：pi
+原始密码：raspberry
+
+
+Time Zone 時區
+sudo apt-get install ntpdate
+tzselect: xxxxxxxx
+sudo ntpdate xxxxxxxxx
+date
+
+install
+
+git: sudo apt-get install git-ycore
+vim: sudo apt-get install vim
+pip: sudo apt-get install python-pip
+
+
+mount
+exFAT & ntfs
+
+sudo apt-get update
+sudo apt-get install ntfs-3g
+sudo apt-get install exfat-fuse exfat-utils
+
+
+samba
+
+sudo apt-get update
+sudo apt-get install samba
+sudo smbpasswd -a <user_name>: e.g. pi
+mkdir /home/pi/xunlei
+sudo cp /etc/samba/smb.conf ~
+sudo vim /etc/samba/smb.conf
+sudo /etc/init.d/samba restart
+Remember that your user must have permission to write and edit the folder you want to share.
+
+sudo chown <user_name> /var/opt/blah/blahblah
+sudo chown :<user_name> /var/opt/blah/blahblah
+# add to smb.conf
+[media]
+path=/media
+validusers=pi
+browseable=yes
+public=yes
+writable=yes
+
+
+
+保护硬盘
+
+由于树莓派 24 小时不断电，大部分时间硬盘是空闲的，为了省电，同时保护硬盘，可以设置空闲的时候自动停转（spin down），进入 standby 状态。
+
+sudo vim /etc/hdparm.conf
+
+quiet 
+apm = 127
+spindown_time = 60
+apm 设置高级电源管理功能，越小表示越激进，0-127 允许 spin down。spindown_time 设置停转的超时时间，1-240 的单位是 5s，因此设为 60 表示 5 分钟没有读写硬盘将停转。
+
+
